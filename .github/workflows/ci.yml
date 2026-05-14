@@ -1,0 +1,15 @@
+name: Ci-pipeline
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo Hello Amany
+        run: echo "Hello Amany"
+         
